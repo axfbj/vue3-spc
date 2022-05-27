@@ -1,0 +1,34 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --menu-width: 210px;
+}
+html,
+body,
+#app {
+  height: 100vh;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+td .n-button + .n-button {
+  margin-left: 10px;
+}
+
+.form-item-require .n-form-item-label::before {
+  content: '*';
+  color: red;
+}
+
+.form-item-no-require .n-form-item-label::before {
+  content: '*';
+  color: transparent;
+}
+
+.n-card {
+  border-radius: 10px;
+}
